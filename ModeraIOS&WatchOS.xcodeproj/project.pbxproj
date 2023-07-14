@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6601A37B2A60F5F7009F3D35 /* ModeraIOS_WatchOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601A37A2A60F5F7009F3D35 /* ModeraIOS_WatchOSApp.swift */; };
+		6601A37D2A60F5F7009F3D35 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601A37C2A60F5F7009F3D35 /* Persistence.swift */; };
+		6601A3802A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6601A37E2A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodeld */; };
+		6601A3842A60F5F8009F3D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6601A3832A60F5F8009F3D35 /* Assets.xcassets */; };
+		6601A3882A60F5F8009F3D35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6601A3872A60F5F8009F3D35 /* Preview Assets.xcassets */; };
+		6601A3982A60F659009F3D35 /* ModeaWatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601A3972A60F659009F3D35 /* ModeaWatchApp.swift */; };
+		6601A39A2A60F659009F3D35 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601A3992A60F659009F3D35 /* ContentView.swift */; };
+		6601A39C2A60F65A009F3D35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6601A39B2A60F65A009F3D35 /* Assets.xcassets */; };
+		6601A39F2A60F65A009F3D35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6601A39E2A60F65A009F3D35 /* Preview Assets.xcassets */; };
+		6601A3A22A60F65A009F3D35 /* ModeaWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6601A3952A60F659009F3D35 /* ModeaWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		6601A3AC2A60F6CE009F3D35 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601A3AB2A60F6CE009F3D35 /* MainView.swift */; };
+		6601A3AE2A60F6E4009F3D35 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601A3AD2A60F6E3009F3D35 /* DetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6601A3A02A60F65A009F3D35 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6601A36F2A60F5F7009F3D35 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6601A3942A60F659009F3D35;
+			remoteInfo = "ModeaWatch Watch App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6601A3A62A60F65A009F3D35 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				6601A3A22A60F65A009F3D35 /* ModeaWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6601A3772A60F5F7009F3D35 /* ModeraIOS&WatchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ModeraIOS&WatchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6601A37A2A60F5F7009F3D35 /* ModeraIOS_WatchOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeraIOS_WatchOSApp.swift; sourceTree = "<group>"; };
+		6601A37C2A60F5F7009F3D35 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		6601A37F2A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ModeraIOS_WatchOS.xcdatamodel; sourceTree = "<group>"; };
+		6601A3832A60F5F8009F3D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6601A3852A60F5F8009F3D35 /* ModeraIOS_WatchOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ModeraIOS_WatchOS.entitlements; sourceTree = "<group>"; };
+		6601A3872A60F5F8009F3D35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6601A3952A60F659009F3D35 /* ModeaWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ModeaWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6601A3972A60F659009F3D35 /* ModeaWatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeaWatchApp.swift; sourceTree = "<group>"; };
+		6601A3992A60F659009F3D35 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6601A39B2A60F65A009F3D35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6601A39E2A60F65A009F3D35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6601A3AB2A60F6CE009F3D35 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		6601A3AD2A60F6E3009F3D35 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6601A3742A60F5F7009F3D35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6601A3922A60F659009F3D35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6601A36E2A60F5F7009F3D35 = {
+			isa = PBXGroup;
+			children = (
+				6601A3792A60F5F7009F3D35 /* ModeraIOS&WatchOS */,
+				6601A3962A60F659009F3D35 /* ModeaWatch Watch App */,
+				6601A3782A60F5F7009F3D35 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6601A3782A60F5F7009F3D35 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6601A3772A60F5F7009F3D35 /* ModeraIOS&WatchOS.app */,
+				6601A3952A60F659009F3D35 /* ModeaWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6601A3792A60F5F7009F3D35 /* ModeraIOS&WatchOS */ = {
+			isa = PBXGroup;
+			children = (
+				6601A3AA2A60F67E009F3D35 /* CoreData */,
+				6601A3902A60F638009F3D35 /* ViewModel */,
+				6601A38F2A60F633009F3D35 /* Model */,
+				6601A38E2A60F62D009F3D35 /* View */,
+				6601A37A2A60F5F7009F3D35 /* ModeraIOS_WatchOSApp.swift */,
+				6601A3832A60F5F8009F3D35 /* Assets.xcassets */,
+				6601A3852A60F5F8009F3D35 /* ModeraIOS_WatchOS.entitlements */,
+				6601A3862A60F5F8009F3D35 /* Preview Content */,
+			);
+			path = "ModeraIOS&WatchOS";
+			sourceTree = "<group>";
+		};
+		6601A3862A60F5F8009F3D35 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6601A3872A60F5F8009F3D35 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6601A38E2A60F62D009F3D35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6601A3AB2A60F6CE009F3D35 /* MainView.swift */,
+				6601A3AD2A60F6E3009F3D35 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6601A38F2A60F633009F3D35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6601A3902A60F638009F3D35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6601A3962A60F659009F3D35 /* ModeaWatch Watch App */ = {
+			isa = PBXGroup;
+			children = (
+				6601A3A92A60F675009F3D35 /* ViewModel */,
+				6601A3A82A60F670009F3D35 /* Model */,
+				6601A3A72A60F66A009F3D35 /* View */,
+				6601A3972A60F659009F3D35 /* ModeaWatchApp.swift */,
+				6601A3992A60F659009F3D35 /* ContentView.swift */,
+				6601A39B2A60F65A009F3D35 /* Assets.xcassets */,
+				6601A39D2A60F65A009F3D35 /* Preview Content */,
+			);
+			path = "ModeaWatch Watch App";
+			sourceTree = "<group>";
+		};
+		6601A39D2A60F65A009F3D35 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6601A39E2A60F65A009F3D35 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6601A3A72A60F66A009F3D35 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6601A3A82A60F670009F3D35 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6601A3A92A60F675009F3D35 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		6601A3AA2A60F67E009F3D35 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				6601A37C2A60F5F7009F3D35 /* Persistence.swift */,
+				6601A37E2A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6601A3762A60F5F7009F3D35 /* ModeraIOS&WatchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6601A38B2A60F5F8009F3D35 /* Build configuration list for PBXNativeTarget "ModeraIOS&WatchOS" */;
+			buildPhases = (
+				6601A3732A60F5F7009F3D35 /* Sources */,
+				6601A3742A60F5F7009F3D35 /* Frameworks */,
+				6601A3752A60F5F7009F3D35 /* Resources */,
+				6601A3A62A60F65A009F3D35 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6601A3A12A60F65A009F3D35 /* PBXTargetDependency */,
+			);
+			name = "ModeraIOS&WatchOS";
+			productName = "ModeraIOS&WatchOS";
+			productReference = 6601A3772A60F5F7009F3D35 /* ModeraIOS&WatchOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6601A3942A60F659009F3D35 /* ModeaWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6601A3A32A60F65A009F3D35 /* Build configuration list for PBXNativeTarget "ModeaWatch Watch App" */;
+			buildPhases = (
+				6601A3912A60F659009F3D35 /* Sources */,
+				6601A3922A60F659009F3D35 /* Frameworks */,
+				6601A3932A60F659009F3D35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ModeaWatch Watch App";
+			productName = "ModeaWatch Watch App";
+			productReference = 6601A3952A60F659009F3D35 /* ModeaWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6601A36F2A60F5F7009F3D35 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6601A3762A60F5F7009F3D35 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					6601A3942A60F659009F3D35 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 6601A3722A60F5F7009F3D35 /* Build configuration list for PBXProject "ModeraIOS&WatchOS" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6601A36E2A60F5F7009F3D35;
+			productRefGroup = 6601A3782A60F5F7009F3D35 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6601A3762A60F5F7009F3D35 /* ModeraIOS&WatchOS */,
+				6601A3942A60F659009F3D35 /* ModeaWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6601A3752A60F5F7009F3D35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6601A3882A60F5F8009F3D35 /* Preview Assets.xcassets in Resources */,
+				6601A3842A60F5F8009F3D35 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6601A3932A60F659009F3D35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6601A39F2A60F65A009F3D35 /* Preview Assets.xcassets in Resources */,
+				6601A39C2A60F65A009F3D35 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6601A3732A60F5F7009F3D35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6601A3802A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodeld in Sources */,
+				6601A3AE2A60F6E4009F3D35 /* DetailView.swift in Sources */,
+				6601A37B2A60F5F7009F3D35 /* ModeraIOS_WatchOSApp.swift in Sources */,
+				6601A3AC2A60F6CE009F3D35 /* MainView.swift in Sources */,
+				6601A37D2A60F5F7009F3D35 /* Persistence.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6601A3912A60F659009F3D35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6601A39A2A60F659009F3D35 /* ContentView.swift in Sources */,
+				6601A3982A60F659009F3D35 /* ModeaWatchApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6601A3A12A60F65A009F3D35 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6601A3942A60F659009F3D35 /* ModeaWatch Watch App */;
+			targetProxy = 6601A3A02A60F65A009F3D35 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		6601A3892A60F5F8009F3D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6601A38A2A60F5F8009F3D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		6601A38C2A60F5F8009F3D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ModeraIOS&WatchOS/ModeraIOS_WatchOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModeraIOS&WatchOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.ModeraIOS-WatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6601A38D2A60F5F8009F3D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ModeraIOS&WatchOS/ModeraIOS_WatchOS.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModeraIOS&WatchOS/Preview Content\"";
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.ModeraIOS-WatchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		6601A3A42A60F65A009F3D35 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModeaWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ModeaWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.apple.ModeraIOS-WatchOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.ModeraIOS-WatchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Debug;
+		};
+		6601A3A52A60F65A009F3D35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ModeaWatch Watch App/Preview Content\"";
+				DEVELOPMENT_TEAM = 386W4DPD42;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = ModeaWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "com.apple.ModeraIOS-WatchOS";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.apple.ModeraIOS-WatchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 9.4;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6601A3722A60F5F7009F3D35 /* Build configuration list for PBXProject "ModeraIOS&WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6601A3892A60F5F8009F3D35 /* Debug */,
+				6601A38A2A60F5F8009F3D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6601A38B2A60F5F8009F3D35 /* Build configuration list for PBXNativeTarget "ModeraIOS&WatchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6601A38C2A60F5F8009F3D35 /* Debug */,
+				6601A38D2A60F5F8009F3D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6601A3A32A60F65A009F3D35 /* Build configuration list for PBXNativeTarget "ModeaWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6601A3A42A60F65A009F3D35 /* Debug */,
+				6601A3A52A60F65A009F3D35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6601A37E2A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6601A37F2A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodel */,
+			);
+			currentVersion = 6601A37F2A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodel */;
+			path = ModeraIOS_WatchOS.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6601A36F2A60F5F7009F3D35 /* Project object */;
+}
