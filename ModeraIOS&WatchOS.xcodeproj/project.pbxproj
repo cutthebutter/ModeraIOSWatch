@@ -19,6 +19,7 @@
 		6601A3A22A60F65A009F3D35 /* ModeaWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 6601A3952A60F659009F3D35 /* ModeaWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		6601A3AC2A60F6CE009F3D35 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601A3AB2A60F6CE009F3D35 /* MainView.swift */; };
 		6601A3AE2A60F6E4009F3D35 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601A3AD2A60F6E3009F3D35 /* DetailView.swift */; };
+		6601A3B92A611C19009F3D35 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6601A3B82A611C19009F3D35 /* SettingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		6601A39E2A60F65A009F3D35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6601A3AB2A60F6CE009F3D35 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6601A3AD2A60F6E3009F3D35 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		6601A3B82A611C19009F3D35 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +104,9 @@
 			isa = PBXGroup;
 			children = (
 				6601A3AA2A60F67E009F3D35 /* CoreData */,
-				6601A3902A60F638009F3D35 /* ViewModel */,
-				6601A38F2A60F633009F3D35 /* Model */,
-				6601A38E2A60F62D009F3D35 /* View */,
+				6601A38E2A60F62D009F3D35 /* Main */,
+				6601A3B62A611BDB009F3D35 /* Detail */,
+				6601A3B72A611C01009F3D35 /* Setting */,
 				6601A37A2A60F5F7009F3D35 /* ModeraIOS_WatchOSApp.swift */,
 				6601A3832A60F5F8009F3D35 /* Assets.xcassets */,
 				6601A3852A60F5F8009F3D35 /* ModeraIOS_WatchOS.entitlements */,
@@ -121,37 +123,19 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		6601A38E2A60F62D009F3D35 /* View */ = {
+		6601A38E2A60F62D009F3D35 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				6601A3AB2A60F6CE009F3D35 /* MainView.swift */,
-				6601A3AD2A60F6E3009F3D35 /* DetailView.swift */,
 			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		6601A38F2A60F633009F3D35 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6601A3902A60F638009F3D35 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		6601A3962A60F659009F3D35 /* ModeaWatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				6601A3A92A60F675009F3D35 /* ViewModel */,
-				6601A3A82A60F670009F3D35 /* Model */,
 				6601A3A72A60F66A009F3D35 /* View */,
 				6601A3972A60F659009F3D35 /* ModeaWatchApp.swift */,
-				6601A3992A60F659009F3D35 /* ContentView.swift */,
 				6601A39B2A60F65A009F3D35 /* Assets.xcassets */,
 				6601A39D2A60F65A009F3D35 /* Preview Content */,
 			);
@@ -169,22 +153,9 @@
 		6601A3A72A60F66A009F3D35 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6601A3992A60F659009F3D35 /* ContentView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		6601A3A82A60F670009F3D35 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		6601A3A92A60F675009F3D35 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ViewModel;
 			sourceTree = "<group>";
 		};
 		6601A3AA2A60F67E009F3D35 /* CoreData */ = {
@@ -194,6 +165,22 @@
 				6601A37E2A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodeld */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		6601A3B62A611BDB009F3D35 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				6601A3AD2A60F6E3009F3D35 /* DetailView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		6601A3B72A611C01009F3D35 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				6601A3B82A611C19009F3D35 /* SettingView.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,6 +288,7 @@
 				6601A3802A60F5F7009F3D35 /* ModeraIOS_WatchOS.xcdatamodeld in Sources */,
 				6601A3AE2A60F6E4009F3D35 /* DetailView.swift in Sources */,
 				6601A37B2A60F5F7009F3D35 /* ModeraIOS_WatchOSApp.swift in Sources */,
+				6601A3B92A611C19009F3D35 /* SettingView.swift in Sources */,
 				6601A3AC2A60F6CE009F3D35 /* MainView.swift in Sources */,
 				6601A37D2A60F5F7009F3D35 /* Persistence.swift in Sources */,
 			);
